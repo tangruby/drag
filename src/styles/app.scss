@@ -1,0 +1,16 @@
+// 公用样式
+@import 'page';
+
+// flexbox 布局
+@import 'app/flex';
+
+// layer 样式
+@import 'layer';
+
+// keyframes 动画
+@import 'app/animation';
+
+// 图标、表单、按钮样式
+@import 'pi-icon';
+@import 'pi-form';
+@import 'pi-button';

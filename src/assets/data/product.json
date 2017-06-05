@@ -1,0 +1,168 @@
+{
+    "body": {
+        "original": {
+            "prodPage": [
+                {
+                    "assetId": "6",
+                    "assetName": "现金管理",
+                    "color": "f8bbef",
+                    "percentage": "87",
+                    "products": [
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "；辣椒素；顶替苛夺基本面法律界顶替黄果树瀑布地世",
+                            "lowestBuy": "1000",
+                            "productCode": "PA3012",
+                            "productId": "4042497",
+                            "productInvest": "1000",
+                            "productName": "灵活宝1号",
+                            "productRisk": "中风险",
+                            "productType": "3",
+                            "returnRate": "1.58"
+                        }
+                    ],
+                    "shortName": "现金",
+                    "suggestInvest": "1000"
+                },
+                {
+                    "assetId": "1",
+                    "assetName": "权益",
+                    "color": "acd9eb",
+                    "percentage": "12",
+                    "products": [
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "31321 \n31g313d1g3d13gh6d46f4gh6d4一个人员工作为了解决定gh6d463g13hd1g313df1g压下d3f1gh压下\n\n 0g0dfgh3在\n",
+                            "lowestBuy": "10",
+                            "productCode": "001256",
+                            "productId": "3568804",
+                            "productInvest": "69",
+                            "productName": "泓德优选成长",
+                            "productRisk": "中高风险",
+                            "productType": "15",
+                            "productTypename": "偏股型",
+                            "returnRate": "11.37"
+                        },
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "顶戴枯基本面基本面塔顶播放播放1v",
+                            "lowestBuy": "10",
+                            "productCode": "229002",
+                            "productId": "3566553",
+                            "productInvest": "69",
+                            "productName": "泰达宏利逆向策略",
+                            "productRisk": "高风险",
+                            "productType": "8",
+                            "productTypename": "混合型",
+                            "returnRate": "16.04"
+                        }
+                    ],
+                    "shortName": "权益",
+                    "suggestInvest": "138"
+                },
+                {
+                    "assetId": "2",
+                    "assetName": "(类)固定收益",
+                    "color": "ffc6b6",
+                    "percentage": "0",
+                    "products": [
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "213\n1321321\n32131\n3\nsad3f21a1fd321fadf1a\nasd3f131\nad1f321\n\n",
+                            "lowestBuy": "10",
+                            "productCode": "200013",
+                            "productId": "3566290",
+                            "productInvest": "0",
+                            "productName": "长城增利A",
+                            "productRisk": "中低风险",
+                            "productType": "2",
+                            "productTypename": "债券型",
+                            "returnRate": "-0.09"
+                        },
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n",
+                            "lowestBuy": "10",
+                            "productCode": "485111",
+                            "productId": "3567468",
+                            "productInvest": "0",
+                            "productName": "工银双利债券A",
+                            "productRisk": "中低风险",
+                            "productType": "2",
+                            "productTypename": "债券型",
+                            "returnRate": "0.66"
+                        }
+                    ],
+                    "shortName": "类固收",
+                    "suggestInvest": "0"
+                },
+                {
+                    "assetId": "3",
+                    "assetName": "另类(非黄金)",
+                    "color": "fffab6",
+                    "percentage": "0",
+                    "products": [
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "产品亮点",
+                            "lowestBuy": "10",
+                            "productCode": "001335",
+                            "productId": "3567021",
+                            "productInvest": "0",
+                            "productName": "南方利众",
+                            "productRisk": "中风险",
+                            "productType": "8",
+                            "productTypename": "混合型",
+                            "returnRate": "5.60"
+                        },
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "！",
+                            "lowestBuy": "100",
+                            "productCode": "000753",
+                            "productId": "3567301",
+                            "productInvest": "0",
+                            "productName": "华宝量化对冲A",
+                            "productRisk": "中低风险",
+                            "productType": "17",
+                            "productTypename": "股票多空型",
+                            "returnRate": "4.01"
+                        }
+                    ],
+                    "shortName": "另类",
+                    "suggestInvest": "0"
+                },
+                {
+                    "assetId": "4",
+                    "assetName": "黄金",
+                    "color": "c3e3a7",
+                    "percentage": "1",
+                    "products": [
+                        {
+                            "appendMinBuy": "1",
+                            "lightspot": "dsk||||||HSKH |ds枯井 工作加盟店里面对\n \n工\n右轼工左右手机会工\n 基 \n \n工作为\n",
+                            "lowestBuy": "1",
+                            "productCode": "000216",
+                            "productId": "3568363",
+                            "productInvest": "11",
+                            "productName": "华安易富黄金ETF联接A类",
+                            "productRisk": "高风险",
+                            "productType": "14",
+                            "productTypename": "其他型",
+                            "returnRate": "5.42"
+                        }
+                    ],
+                    "shortName": "黄金",
+                    "suggestInvest": "11"
+                }
+            ],
+            "ajustFlag": "0",
+            "investAsset": "1149"
+        },
+        "groupRisk": 4,
+        "id": 543802,
+        "monthReturnRate": "近一年,1.60"
+    },
+    "responseCode": "200",
+    "responseMsg": "operate successfully"
+}

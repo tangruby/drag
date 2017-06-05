@@ -1,0 +1,96 @@
+/**
+ * flexbox 布局常用类
+*/
+:global {
+    .flex {
+        display: flex;
+    }
+
+    .flex-column,
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex-nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .flex,
+    .flex-row {
+        flex-direction: row;
+        &.flex-left {
+            justify-content: flex-start;
+        }
+
+        &.flex-right {
+            justify-content: flex-end;
+        }
+
+        &.flex-top {
+            align-items: flex-start;
+        }
+
+        &.flex-bottom {
+            align-items: flex-end;
+        }
+
+        &.flex-center {
+            justify-content: center;
+        }
+
+        &.flex-middle {
+            align-items: center;
+        }
+    }
+
+    .flex-column {
+        flex-direction: column;
+        &.flex-left {
+            align-items: flex-start;
+        }
+
+        &.flex-right {
+            align-items: flex-end;
+        }
+
+        &.flex-top {
+            justify-content: flex-start;
+        }
+
+        &.flex-bottom {
+            justify-content: flex-end;
+        }
+
+        &.flex-center {
+            align-items: center;
+        }
+
+        &.flex-middle {
+            justify-content: center;
+        }
+    }
+
+    .flex-around {
+        justify-content: space-around;
+    }
+
+    .flex-between {
+        justify-content: space-between;
+    }
+
+    .flex-baseline {
+        align-items: baseline;
+    }
+
+    .flex-strech {
+        align-items: stretch;
+    }
+
+    .flex-auto {
+        flex: 1;
+    }
+}
+
+
+

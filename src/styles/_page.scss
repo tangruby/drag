@@ -1,0 +1,218 @@
+@import 'app/variable';
+@import 'app/mixins';
+:global {
+    body,
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+        margin: 0;
+        color: $color-darkblack;
+        font-family: $font-family;
+        font-weight: 300;
+        background-color: #f3f3f3;
+        user-select: none;
+        letter-spacing: .01rem;
+        -webkit-text-size-adjust: 100%;
+    }
+    input,
+    textarea,
+    div,
+    button,
+    input,
+    a {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    #blankPage{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 1;
+        display: none;
+    }
+    
+    #app {
+        font-size: .32rem;
+    }
+    .inblock {
+        display: inline-block;
+    }
+    .page {
+        box-sizing: border-box;
+        max-width: 60rem;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-height: 100%
+    }
+    .page-header {
+        height: px2rem(84);
+    }
+    .page-body {
+        flex: 1;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+    a {
+        color: $color-darkblack;
+        &:link {
+            color: $color-darkblack;
+        }
+        text-decoration: none;
+    }
+    em {
+        font-style: normal
+    }
+    .block {
+        padding-left: px2rem(34);
+        padding-right: px2rem(34);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .al,
+    .text-left {
+        text-align: left;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .gray {
+        color: #999;
+    }
+    .bg {
+        background-color: #f8f8f8;
+    }
+    .bg-white{
+        background: #ffffff;
+    }
+    /**
+     * 弹出层样式
+    */
+    .dialog-wrapper {
+        display: inline-block;
+        .dialog-mask {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10001;
+            left: 0;
+            top: 0;
+        }
+        .dialog-box {
+            position: fixed;
+            width: 5.7rem;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 0.1rem;
+            z-index: 10002;
+            top: 30%;
+            left: .8rem;
+            right: .8rem;
+            .dialog-body {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                // padding: px2rem(24);
+                color: #333;
+                .pi-icon-close {
+                    position: absolute;
+                    top: 0.125rem;
+                    right: 0.3125rem;
+                    width: px2rem(24);
+                    height: px2rem(24);
+                    padding: px2rem(12);
+                }
+                .dialog-title {
+                    font-size: .3rem;
+                    font-weight: normal;
+                    text-align: center;
+                    height: .8rem;
+                    line-height: .8rem;
+                    border-bottom: 1px solid #e3e3e3;
+                }
+                .dialog-content {
+                    margin:  .36rem .5rem;
+                    .content-input{
+                        overflow: hidden;   
+                        padding: 0;
+                        width: 4.73rem;
+                        height: .75rem;
+                        border: 1px solid #e3e3e3;
+                        display: inline-block;  
+                        white-space: nowrap;  
+                        vertical-align: middle;
+                        text-align: left;
+                        border-radius: .1rem;
+
+                        input[type="text"],
+                        input[type="number"],
+                        input[type="tel"] {
+                            margin: 0rem .02rem;
+                            height: 100%;
+                            background: none;
+                            text-align: right;
+                            border: 0;
+                            outline: none;
+                            font-size: .48rem;
+                            width: 3rem;
+                            color: #ec4d4d;
+                        }
+                        span{
+                            font-size: .28rem;
+                            color: #ec4d4d;
+                        }
+                    }
+                    >div {
+                        text-align: center;
+                        color: #999;
+                    }
+                    .content-text{
+                        margin-top: .1rem;
+                        font-size: .28rem;
+                        text-align: left;
+                        color:#1e1e1e;
+                    }
+                }
+                .dialog-btnbox {
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: center;
+                    border-top:1px solid #e3e3e3;
+                    height: .8rem;
+                    // padding: px2rem(28) 0;
+                    div {
+                        padding-top: .18rem;
+                        flex: 1;
+                        text-align: center;
+                        color: #2682ea;
+                    }
+                    div:first-child{
+                        border-right:1px solid #e3e3e3;
+                    }
+                    .pi-btn {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .pi-icon-edit {
+            padding: px2rem(10) px2rem(10) px2rem(10) px2rem(6);
+            width: px2rem(24);
+            height: px2rem(24);
+            vertical-align: baseline;
+            ;
+        }
+    }
+}

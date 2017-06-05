@@ -1,0 +1,180 @@
+/*
+ page icon styles
+ Author:xieqiaoyun258
+ Date:2016-07-22
+*/
+:global {
+    .pi-icon{
+        position: relative;
+        top: 0px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .pi-icon:before{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        content:' ';
+        background-size: 100%;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .pi-icon-back:before{
+        background-image: url(../images/icon/return.png) ;
+    }
+    .pi-icon-home:before{
+        background-image: url(../images/icon/home.png);
+    }
+    .pi-icon-chart:before{
+        background-image: url(../images/icon/pie-chart-0.png);
+    }
+    .pi-icon-preview:before{
+        background-image: url(../images/icon/Preview-0.png);
+    }
+    .pi-icon-robot:before{
+        background-image: url(../images/icon/robot-0.png);
+    }
+    .pi-icon-edit:before{
+        background-image: url(../images/icon/PEN-2.png);
+    }
+    .pi-icon-barchart:before{
+        background-image: url(../images/icon/income-icon.png);
+    }
+    .pi-icon-help:before{
+        background-image: url(../images/icon/icon-why.png);
+    }
+    .pi-icon-arrow-left:before{
+        background-image: url(../images/icon/custom.png);
+    }
+    .pi-icon-close:before{
+        background-image: url(../images/icon/close.png);
+    }
+    .pi-icon-arrow-right:before{
+        background-image: url(../images/icon/arrow-right.png);
+    }
+    .pi-icon-male:before{
+        background-image: url(../images/icon/male.png);
+    }
+    .pi-icon-female:before{
+        background-image: url(../images/icon/female.png);
+    }
+
+    
+      .pi-icon-males:before{
+        background-image: url(../images/icon/male.gif);
+    }
+    .pi-icon-females:before{
+        background-image: url(../images/icon/female.gif);
+    }
+    .pi-icon-boy:before{
+        background-image: url(../images/icon/dialogue-box-boy.png);
+    }
+    .pi-icon-girl:before{
+        background-image: url(../images/icon/dialogue-box-girl.png);
+    }
+    .pi-icon-arrow-up:before{
+        background-image: url(../images/icon/arrow-up.png);
+    }
+    .pi-icon-arrow-down:before{
+        background-image: url(../images/icon/arrow-up.png);
+        transform: rotate(180deg);
+        transform-origin: center center 0px;
+    }
+    .pi-icon-plan:before{
+        background-image: url(../images/icon/icon-plan.png);
+    }
+    .pi-icon-stock:before{
+        background-image: url(../images/icon/icon-stock.png);
+    }
+
+    .pi-icon-report:before{
+        background-image: url(../images/icon/icon-report.png);
+    }
+    .pi-icon-balance:before{
+        background-image: url(../images/icon/icon-balance.png);
+    }
+    .pi-icon-return:before{
+        background-image: url(../images/icon/icon-return.png);
+    }
+    .pi-icon-whitepaper:before{
+        background-image: url(../images/icon/icon-whitepaper.png);
+    }
+    .pi-icon-more{
+        width: .13rem;
+        height: .22rem;
+    }
+    .pi-icon-more:before{
+        background-image: url(../images/icon/icon-more.png);
+    }
+    .pi-icon-time:before{
+        background-image: url(../images/icon/icon-time.png);
+    }
+    .pi-icon-check:before{
+        background-image: url(../images/icon/icon-check.png);
+    }
+    .pi-icon-checked:before{
+        background-image: url(../images/icon/icon-checked.png);
+    }
+    .pi-icon-out:before{
+        background-image: url(../images/icon/icon-out.png);
+    }
+    .pi-icon-search:before{
+        background-image: url(../images/icon/icon-search.png);
+    }
+    .pi-icon-unavail:before{
+        background-image: url(../images/icon/icon-unavail.png);
+    }
+    .pi-icon_avail:before{
+        background-image: url(../images/icon/icon_avail.png);
+    }
+    .pi-icon-refresh:before{
+        background-image: url(../images/icon/icon-refresh.png);
+    }
+    .pi-icon-cloud:before{
+        background-image: url(../images/icon/icon-cloud.png);
+    }
+    .pi-icon-down:before{
+        background-image: url(../images/icon/icon-down.png);
+    }
+    .pi-icon-up:before{
+        background-image: url(../images/icon/icon-up.png);
+    }
+    .pi-icon-right:before{
+        background-image: url(../images/icon/icon-right.png);
+    }
+    .pi-icon-left-forefinger:before{
+        background-image: url(../images/icon/icon-left-forefinger.png);
+    }
+    .pi-icon-book:before{
+        background-image: url(../images/icon/icon-book.png);
+    }
+    .pi-icon-unknown:before{
+        background-image: url(../images/icon/icon-unknown.png);
+    }
+
+    .pi-icon-home-arrow-up:before{
+        background-image: url(../images/icon/icon-arrow-up.png);        
+    }
+
+    .pi-icon-arrow-left:before{
+        background-image: url(../images/icon/icon-arrow-left.png);        
+    }
+
+    .pi-icon-home-arrow-eq:before{
+        background-image: url(../images/icon/icon-arrow-eq.png);        
+    }
+
+    .pi-icon-home-arrow-down:before{
+        background-image: url(../images/icon/icon-arrow-down.png);        
+    }
+
+    .pi-icon-why:before{
+        background-image: url(../images/icon/icon-why.png);        
+    }
+}

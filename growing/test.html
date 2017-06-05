@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <style type="text/css">
+        html body {
+            margin: 0;
+        }
+
+        .wraper {
+            width: 1000px;
+            heigth: 1000px;
+            margin: 0 auto;
+        }
+
+        .block {
+            float: left;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .blue {
+            background: #3bafda;
+        }
+
+        .red {
+            background: #da4453;
+        }
+    </style>
+</head>
+<body>
+    <div class="wraper" id="wraper">
+        <div class="block red"></div>
+        <div class="block blue"></div>
+        <div class="block red"></div>
+        <div class="block blue"></div>
+        <div class="block red"></div>
+        <div class="block blue"></div>
+		<div class="block red"></div>
+        <div class="block blue"></div>
+        <div class="block red"></div>
+        <div class="block blue"></div>
+        <div class="block red"></div>
+        <div class="block blue"></div>
+    </div>
+    <script type="text/javascript">
+        function drag(elem) {
+            this.elem = elem;
+            this.innit();
+            this.move();
+        }
+        drag.prototype = {
+            innit:function(){
+                var parent = this.elem.parentNode,
+                list = parent.children,
+                pos = [];
+                parent.style.position = 'relative';
+                for(var i=list.length;i--;){
+                    pos[i]={'left':list[i].offsetLeft,
+                    'top':list[i].offsetTop};
+                     list[i].style.left = list[i].offsetLeft + 'px';
+                    list[i].style.top = list[i].offsetTop + 'px';
+                    list[i].style.position = 'absolute';
+                }
+            },
+            stopPrevent:function(){
+
+            },
+            collision:function(cause,passive){
+
+            },
+            meter:function(orgin,list){
+
+            },
+            curIndex:function(obj,list){
+
+            },getStyle:function(obj,prop){
+
+            },startMove:function(obj,style){
+
+            },move:function(){
+
+            }
+            
+        }
+
+        for (var i = $('wraper').children.length; i--;) {
+            new drag($('wraper').children[i]);
+        }
+        function $(id) {
+            return id ? document.getElementById(id) : null;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.iconTheme": "vs-seti",
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+        },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "vue"
+    ],
+    "eslint.options": {
+        "plugins": ["html"]
+    },
+    "workbench.welcome.enabled": true
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script><%= htmlWebpackPlugin.options.inline %></script>
+</head>
+<body>
+    <div id="app">
+    </div>
+    <% if(htmlWebpackPlugin.options.bundleName){%>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.options.bundleName %>"></script>
+    <% } %>
+</body>
+</html>

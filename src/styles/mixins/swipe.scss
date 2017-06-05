@@ -1,0 +1,238 @@
+@mixin dur($sec:1s) {
+    animation-duration: $sec;
+}
+
+@mixin ani-infinite() {
+    animation-iteration-count: infinite;
+}
+
+@mixin delay($sec:1s) {
+    animation-delay: $sec !important;
+}
+
+@mixin timing-bezier($x1:.86, $y1:0, $x2:.07, $y2:1) {
+    animation-timing-function: cubic-bezier($x1, $y1, $x2, $y2);
+}
+
+@mixin timing-ease-out() {
+    animation-timing-function: ease-out;
+}
+
+@mixin timing-ease-in() {
+    animation-timing-function: ease-in;
+}
+
+@mixin ani-duration($sec:1s) {
+    animation-duration: $sec;
+}
+
+@mixin animate-goup($duration:5s, $delay:0s) {
+    animation-name: goup;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-dropdown($duration:0.5s, $delay:0s) {
+    animation-name: dropdown;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    @include timing-bezier();
+}
+
+@mixin animate-translate($duration:0.5s, $delay:0s) {
+    animation-name: translate;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-wobble($duration:0.5s, $delay:0s) {
+    animation-name: wobble;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-wobble1($duration:0.5s, $delay:0s) {
+    animation-name: wobble1;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-opacity($duration:0.5s, $delay:0s) {
+    animation-name: opacity;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-opacity1($duration:0.5s, $delay:0s) {
+    animation-name: opacity1;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-fadeUp($duration:0.5s, $delay:0s) {
+    animation-name: fadeUp;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-zoomIn($duration:0.5s, $delay:0s) {
+    animation-name: zoomIn;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@mixin animate-small-zoomIn($duration:0.5s, $delay:0s) {
+    animation-name: smart-zoomIn;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@mixin animate-smaller-zoomIn($duration:0.5s, $delay:0s) {
+    animation-name: smarter-zoomIn;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@mixin animate-smallbg-zoomIn($duration:0.5s, $delay:0s) {
+    animation-name: smartbg-zoomIn;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@mixin animate-small-scale($duration:0.5s, $delay:0s) {
+    animation-name: smart-scale;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@mixin animate-rotate($duration:0.5s, $delay:0s) {
+    animation-name: rotate;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-rotate2($duration:0.5s, $delay:0s) {
+    animation-name: rotate2;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-fadeInDown($duration:0.5s, $delay:0s) {
+    animation-name: fadeInDown;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-trans1($duration:0.5s, $delay:0s) {
+    animation-name: trans1;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-trans2($duration:0.5s, $delay:0s) {
+    animation-name: trans2;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-trans3($duration:0.5s, $delay:0s) {
+    animation-name: trans3;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-fadeleft($duration:0.5s, $delay:0s) {
+    animation-name: fadeleft;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@mixin animate-faderight($duration:0.5s, $delay:0s) {
+    animation-name: faderight;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(.86, 0, .07, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}

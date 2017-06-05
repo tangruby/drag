@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0,user-scalable=no" name="viewport">
+    <title>Scrape</title>
+    <style>
+        #myCanvas {
+            background-repeat: no-repeat;
+            background-position: center;
+            /*background-size: 200px 200px;*/
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas'),
+            ctx = canvas.getContext('2d'),
+            w = canvas.width;
+            h = canvas.height;
+            area = w * h;
+            l = canvas.offsetLeft;
+            t = canvas.offsetTop,
+            img = new Image();
+ 
+        var randomImg = function(){
+            var random = Math.random();
+            img.src = './big_bg.jpg';
+        };
+        var bindEvent = function(){
+            canvas.addEventListener('touchmove', moveFunc, false);
+            canvas.addEventListener('touchend', endFunc, false);
+        };
+        var moveFunc = function(e){
+            var touch = e.touches[0],
+                posX = touch.clientX - l,
+                posY = touch.clientY - t;
+            ctx.beginPath();
+            ctx.arc(posX, posY, 15, 0, Math.PI * 2, 0);
+            ctx.fill();
+        };
+        var endFunc = function(e){
+            var data = ctx.getImageData(0, 0, w, h).data,
+                scrapeNum = 0;
+            for(var i = 3, len = data.length; i < len; i += 4){
+                if(data[i] === 0){
+                    scrapeNum++;
+                }
+            }
+            if(scrapeNum > area * 0.7){
+                ctx.clearRect(0, 0, w, h);
+                canvas.removeEventListener('touchmove', moveFunc, false);
+                canvas.removeEventListener('touchend', endFunc, false);
+            }
+        }
+        var init = (function(){
+            ctx.fillStyle = "#ccc";
+            ctx.fillRect(0, 0, w, h);
+            randomImg();            
+            img.addEventListener('load', function(){
+                canvas.style.backgroundImage = 'url(' + img.src +')';
+                ctx.globalCompositeOperation = 'destination-out';
+                bindEvent();
+            });
+        })();
+    </script>
+</body>
+</html>

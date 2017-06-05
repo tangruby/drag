@@ -1,0 +1,80 @@
+@import 'variable';
+
+@mixin break($device: 'tablet') {
+
+  $width: $break-tablet;
+
+  @if $device == 'desktop' {
+    $width: $break-desktop;
+  }
+
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 25%);
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+@mixin tab-focus() {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;  
+}
+
+
+@mixin placeholder($color: $input-color-placeholder) {
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder { color: $color; }
+  &::-webkit-input-placeholder  { color: $color; }
+}
+
+
+// 单位转换
+@function px2rem($px) {
+    // @return $px*320/$designWidth/$base-font + rem;    
+    @return $px / 100 + rem;
+}
