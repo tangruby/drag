@@ -1,4 +1,4 @@
-# 资产配置
+# drag
 ## 简介
 * 安装 nodejs并设置环境变量
   * node --version
