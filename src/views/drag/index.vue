@@ -1,11 +1,12 @@
 <template>
   <div class="drag">
      <div class="wraper" ref="wraper" >
-       <v-box></v-box>
+       
        <template  v-for="item in boxs">
         <v-box
          v-bind:class="item.clsName"
          v-bind:style="item.stlName"
+         :name="item.name"
          :position="item.point"></v-box>
        </template>  
     </div>
@@ -13,7 +14,7 @@
 </template>
 
 <script>
-import Box from "./box";
+import VBox from "./box";
 import Point from "./Point";
 
 export default {
@@ -23,7 +24,7 @@ export default {
 
     this.initWindows();
 
-    console.log(Box);
+    // console.log(Box);
 
     //初始
     for(let i=0;i<12;i++){
@@ -56,12 +57,15 @@ export default {
       }
   },
   components: {
-    Box,
+    VBox,
   },
   methods:{
     initWindows: function(){
       // console.log(this.$refs.wraper.offsetWidth);
-      let pos = {width:7.5,height:13.34};
+      let hf = lib.flexible.px2rem(document.body.offsetHeight);
+      let wf = lib.flexible.px2rem(document.body.offsetWidth);
+
+      let pos = {width:wf,height:hf};
       pos.subWFull = pos.width / 3;
       pos.subW = pos.width * 0.92 / 3;
       pos.spaceW = pos.width * 0.04 / 3; //有左右

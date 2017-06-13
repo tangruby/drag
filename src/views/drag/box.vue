@@ -1,23 +1,22 @@
 <template>
   <div class="box">
-    <div>hello</div>
-     this is box,{{name}}
+    <div class="name flex-center">{{name}}</div>
   </div>
 </template>
 
 <script>
 export default {
   created(){
-    // console.log("ddd");
-    console.log(this.props.position);
+    
+    // console.log(position);
   },
   data(){
       return {
-        name: 'box'
       }
   },
   props:{
     position:"object",
+    name:"string",
   }
 }
 </script>
@@ -26,6 +25,10 @@ export default {
     .box{
         color: #00FF99;
         font-size:.40rem;
+
+        .name {
+          color:#2266AA;
+        }
     }
 </style>
 
