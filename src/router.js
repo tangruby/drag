@@ -70,7 +70,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   let toPath = to.path
   let fromPath = from.path
-  console.log(`to: ${toPath} from: ${fromPath}`)
+  // console.log(`to: ${toPath} from: ${fromPath}`)
   next();
 })
 

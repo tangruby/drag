@@ -1,13 +1,13 @@
 <template>
   <div class="drag">
-     <div class="wraper" ref="wraper" >
+    <div>{{emptyNum}}</div>
+     <div class="wraper" ref="wraper">
        
-       <template  v-for="item in boxs">
+       <template  v-for="item in boxs" >
         <v-box
-         v-bind:class="item.clsName"
-         v-bind:style="item.stlName"
-         :name="item.name"
-         :position="item.point"></v-box>
+         :boxPos="item"
+         v-on:click.native="boxClick(item)"
+         ></v-box>
        </template>  
     </div>
   </div>
@@ -22,67 +22,78 @@ export default {
 
     this.$root.Hub.$emit('setTitle',{show:false,title:'强智能配置',showHome:false}); //Hub触发事件
 
-    this.initWindows();
-
-    // console.log(Box);
-
     //初始
     for(let i=0;i<12;i++){
       let clsName = 'block ';
       clsName += i%2==0 ? 'red ':'blue ';
       
-      let poi = this.initPoint(i);
+      let pos = C.position.getPosition(i);
+      
+      this.points.push(pos);
 
-      let stlName = `left:${poi.x+this.winPos.spaceW}rem;
-                      top:${poi.y+this.winPos.spaceH}rem;
-                      width:${this.winPos.subW}rem;
-                      height:${this.winPos.subH}rem;
-                      float: left;`;
-                      // position: abslution;`;
+      if(i < 11){
 
-      this.boxs.push({
-        id:i,
-        name:`box${i}`,
-        stlName: stlName,
-        clsName: clsName,
-        point: poi,
-      });
+        this.boxs.push({
+          index:i,
+          id:i,
+          name:`box${i}`,
+          clsName: clsName,
+          position: pos,
+        });
+      }
+
     }
-
+  },
+  updated(){
+    // console.log(23333);
   },
   data(){
       return {
-        boxs: [],
-        winPos:null,
+        boxs: new Array(),
+        points: new Array(),
+        emptyNum: 11,
       }
   },
   components: {
     VBox,
   },
   methods:{
-    initWindows: function(){
-      // console.log(this.$refs.wraper.offsetWidth);
-      let hf = lib.flexible.px2rem(document.body.offsetHeight);
-      let wf = lib.flexible.px2rem(document.body.offsetWidth);
-
-      let pos = {width:wf,height:hf};
-      pos.subWFull = pos.width / 3;
-      pos.subW = pos.width * 0.92 / 3;
-      pos.spaceW = pos.width * 0.04 / 3; //有左右
-      pos.subHFull = pos.height / 4;
-      pos.subH = pos.height * 0.92 / 4;
-      pos.spaceH = pos.height * 0.04 /4; //有上下
-
-      this.winPos = pos;
+    sayHi:function(v){
+      console.log(v);
     },
-    initPoint: function(index){
-      //3*4规格
-      let pos = {w: this.winPos.subW, h: this.winPos.subH};
-      pos.x = (index % 3) * this.winPos.subWFull;
-      pos.y = Math.trunc(index / 3) * this.winPos.subHFull;
+    boxClick:function(box){
+      //交换信息
+      if(this.isNeighbor(box.id)){
+        
+        let num = box.id;
+        box.position = this.points[this.emptyNum];
+        box.id = this.emptyNum;
+
+        this.emptyNum = num;
+      }
+    },
+    isNeighbor:function(index){
+      //同一列
+      if(index % 3 === this.emptyNum % 3 ){
+        //上下相邻
+        if(Math.abs(Math.floor(index/3) - Math.floor(this.emptyNum/3)) === 1){
+          return true;
+        }else{
+          return false;
+        }
       
-      return pos;
-    },
+      }else if( Math.floor(index/3) === Math.floor(this.emptyNum/3)){ //同一行
+        //左右相邻
+        if(Math.abs( (index % 3) - (this.emptyNum%3)) === 1){
+          return true;
+        }else{
+          return false;
+        }
+      }else{
+        return false;
+      }
+    }
+    
   }
 
 }

@@ -1,4 +1,6 @@
 import clone from './clone'
+// import initPosition,{Test} from './position'
+import Position from './position'
 
 (function (win, C) {
 
@@ -16,5 +18,6 @@ import clone from './clone'
         document.getElementsByTagName('head')[0].appendChild(script);
     }
 
+    C.position = new Position();
 
 })(window, window['C'] = window['C'] || {});

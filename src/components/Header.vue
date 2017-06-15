@@ -17,13 +17,10 @@
 
 export default {
   created(){
-    console.log(this.inputValue);
     this.$root.Hub.$on('setTitle', (v) => { //Hub接收事件
-        console.log(v);
         this.show = (v.show === false) ? "none": "block";
         this.title = v.title || '资产配置';
         this.showHome = v.showHome ? true : false;
-        console.log(this.show);
     });
     
   },
