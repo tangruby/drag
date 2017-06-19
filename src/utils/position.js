@@ -8,11 +8,11 @@
 
       let pos = {width:wf,height:hf};
       pos.subWFull = pos.width / 3;
-      pos.subW = pos.width * 0.92 / 3;
-      pos.spaceW = pos.width * 0.04 / 3; //有左右
+      pos.subW = pos.width * 0.99 / 3;
+      pos.spaceW = pos.width * 0.005 / 3; //有左右
       pos.subHFull = pos.height / 4;
-      pos.subH = pos.height * 0.92 / 4;
-      pos.spaceH = pos.height * 0.04 /4; //有上下
+      pos.subH = pos.height * 0.99 / 4;
+      pos.spaceH = pos.height * 0.005 /4; //有上下
 
       this._pos = pos;
       

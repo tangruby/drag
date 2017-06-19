@@ -169,7 +169,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename:'index.html',
             template: 'src/index.html',
-            title:'资产配置',
             env:env,
             sdc:true,
             inline: fs.readFileSync('src/utils/flexible.js', 'utf8'),
@@ -191,24 +190,6 @@ module.exports = {
             //     minifyURLs: true
             // }
         }),
-        // new HtmlWebpackPlugin({
-        //     filename:'map.html',
-        //     template: 'src/map.html',
-        //     title:'资产配置',
-        //     env:env,
-        //     sdc:true,
-        //     sdcId:'dcspymm36v5rgwyi354yjpm91_6q9m',
-        //     inject:false,
-        // }),
-        // new HtmlWebpackPlugin({
-        //     filename:'crossdomain.html',
-        //     template: 'src/crossdomain.html',
-        //     title:'资产配置',
-        //     inject:false,
-        //     minify: {
-        //         removeComments: true,
-        //     }
-        // }),
         new webpack.DllReferencePlugin({
             context: path.resolve("../dll"),
             manifest: require(path.resolve("./dll") + "/vendor-manifest.json")

@@ -50,6 +50,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "glob": "^7.0.5",
+    "gm": "^1.23.0",
     "happypack": "^3.0.2",
     "html-webpack-plugin": "^2.22.0",
     "image-webpack-loader": "^3.0.0",
