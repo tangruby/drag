@@ -2,8 +2,7 @@
   "name": "hellow",
   "version": "3.0.0",
   "repository": {
-    "type": "git",
-    "url": "http://gitf-stock.paic.com.cn/spss_aa/aa_fe_h_cust.git"
+    "type": "git"
   },
   "main": "index.js",
   "scripts": {
