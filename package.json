@@ -1,7 +1,6 @@
 {
   "name": "hellow",
   "version": "3.0.0",
-  "description": "证券资产配置",
   "repository": {
     "type": "git",
     "url": "http://gitf-stock.paic.com.cn/spss_aa/aa_fe_h_cust.git"
