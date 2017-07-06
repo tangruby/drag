@@ -1,0 +1,43 @@
+{
+    "event": "12-资产配置",
+    "label": "120100-资产配置介绍页",
+    "map": {
+        "sdcVisitorId": "",
+        "sdcPlatform": "unknow",
+        "sdcAgent": "safari",
+        "sdcInnerEntry": "zcpz-appsy-zcpz-new,lcsy",
+        "sdcSource": "",
+        "sdcSubagent": "zcpz",
+        "product_code": "",
+        "user_id": "",
+        "user_code": "",
+        "login_sts": false
+    }
+}
+
+[{
+        "type": 2,
+        "data": {
+            "id": "1417e431ee512a000149803889104200",
+            "start": 1498038891043,
+            "status": 2,
+            "duration": 0,
+            "pages": [],
+            "events": [{
+                "count": 1,
+                "time": 1498039455055,
+                "eventId": "12-资产配置",
+                "label": "120100-资产配置介绍页",
+                "parameters": {
+                    "sdcVisitorId": "",
+                    "sdcPlatform": "unknow",
+                    "sdcAgent": "safari",
+                    "sdcInnerEntry": "zcpz-appsy-zcpz-new,lcsy",
+                    "sdcSource": "",
+                    "sdcSubagent": "zcpz",
+                    "product_code": "",
+                    "user_id": "",
+                    "user_code": "",
+                    "login_sts": false
+                }
+            }]

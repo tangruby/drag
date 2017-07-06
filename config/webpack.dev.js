@@ -186,7 +186,6 @@ module.exports = {
             disable: false,
             allChunks: true
         }),
-        new webpack.optimize.OccurenceOrderPlugin(),
         new HappyPack({
             id: 'js-vue',
             tempDir: '.happypackDev/',

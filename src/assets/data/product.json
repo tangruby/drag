@@ -95,73 +95,13 @@
                     ],
                     "shortName": "类固收",
                     "suggestInvest": "0"
-                },
-                {
-                    "assetId": "3",
-                    "assetName": "另类(非黄金)",
-                    "color": "fffab6",
-                    "percentage": "0",
-                    "products": [
-                        {
-                            "appendMinBuy": "1",
-                            "lightspot": "产品亮点",
-                            "lowestBuy": "10",
-                            "productCode": "001335",
-                            "productId": "3567021",
-                            "productInvest": "0",
-                            "productName": "南方利众",
-                            "productRisk": "中风险",
-                            "productType": "8",
-                            "productTypename": "混合型",
-                            "returnRate": "5.60"
-                        },
-                        {
-                            "appendMinBuy": "1",
-                            "lightspot": "！",
-                            "lowestBuy": "100",
-                            "productCode": "000753",
-                            "productId": "3567301",
-                            "productInvest": "0",
-                            "productName": "华宝量化对冲A",
-                            "productRisk": "中低风险",
-                            "productType": "17",
-                            "productTypename": "股票多空型",
-                            "returnRate": "4.01"
-                        }
-                    ],
-                    "shortName": "另类",
-                    "suggestInvest": "0"
-                },
-                {
-                    "assetId": "4",
-                    "assetName": "黄金",
-                    "color": "c3e3a7",
-                    "percentage": "1",
-                    "products": [
-                        {
-                            "appendMinBuy": "1",
-                            "lightspot": "dsk||||||HSKH |ds枯井 工作加盟店里面对\n \n工\n右轼工左右手机会工\n 基 \n \n工作为\n",
-                            "lowestBuy": "1",
-                            "productCode": "000216",
-                            "productId": "3568363",
-                            "productInvest": "11",
-                            "productName": "华安易富黄金ETF联接A类",
-                            "productRisk": "高风险",
-                            "productType": "14",
-                            "productTypename": "其他型",
-                            "returnRate": "5.42"
-                        }
-                    ],
-                    "shortName": "黄金",
-                    "suggestInvest": "11"
                 }
             ],
             "ajustFlag": "0",
             "investAsset": "1149"
         },
-        "groupRisk": 4,
-        "id": 543802,
-        "monthReturnRate": "近一年,1.60"
+        "id": 5432,
+        "monthReturnRate": "近一月,1.60"
     },
     "responseCode": "200",
     "responseMsg": "operate successfully"

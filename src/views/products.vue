@@ -14,6 +14,8 @@
                 <div class="label">买入金额(元):</div>
                 <div>100.00</div>
             </div>
+            <img v-bind:src="img01"></img>
+            <div class="test-img"></div>
             <div class="allProduct">
                 <div class="box" v-for="item in products.original.prodPage">
                     <div v-if="item.suggestInvest && item.suggestInvest > 0 && item.products && item.products.length > 0" class="flex-row flex-between flex-middle title">
@@ -40,6 +42,7 @@
                     
                 </div>
             </div>
+            
             <div class="total">
                 <div class="flex-row flex-between flex-middle totalbox">
                     <div class="totalmoney">合计:
@@ -52,6 +55,9 @@
     </div>
 </template>
 <script>
+
+import img01 from "../images/drag/leader_1_01.png"
+
 export default {
     created(){
         this.getCustomers();
@@ -64,6 +70,7 @@ export default {
             monthRates:[],
             test:'helloworld',
             apiUrl:'http://localhost:3031/products',
+            img01:img01
         }
     },
     methods: {
@@ -211,6 +218,11 @@ export default {
                 border-radius: .05rem;
             }
         }
+    }
+    .test-img {
+        background:url('../images/test.png');
+        width: 6rem;
+        height: 8rem;
     }
 }
 </style>
